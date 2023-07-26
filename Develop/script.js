@@ -28,7 +28,7 @@ function generatePassword(){
   }
  
   if(choices.length === 0){
-    emptySet();
+    return "no characters selected. Please try again.";
   }
 
   let passwordLength = prompt("How long do you want the password");
@@ -38,14 +38,6 @@ function generatePassword(){
   }
   choices = [];
   return password;
-}
-
-function emptySet(){
-  let noItems = false;
-  while (noItems === false){
-    noItems = confirm("No items were selected. Please select OK to try again.");
-  }
-  generatePassword();
 }
 
 function writePassword() {
