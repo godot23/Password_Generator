@@ -6,6 +6,8 @@ This project allows a user to generate a random password based off of certain cr
 ## Usage
 Users should press "generate password". They will then be given a number of prompts, where they can indicate the kinds of characters they want included in their password, as well as their desired length. Afterwards, they will be provided with a random password. If they did not choose any parameters, they will be given an error message and instructed to try again.
 
+![image demonstrating the prompts](./Assets/Screenshot%202023-09-11%20132449.png)
+
 ## License
 Copyright <2023> <Jason Navon>
 
