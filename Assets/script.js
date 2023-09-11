@@ -32,6 +32,9 @@ function generatePassword(){
   }
 
   let passwordLength = prompt("How long do you want the password");
+  while (passwordLength < 8 || passwordLength > 128){
+    passwordLength = prompt("Length must be between 8 and 128 characters. Please reenter the password length");
+  }
 
   for (let i = 0; i < passwordLength; i++){
       password += choices[Math.floor(Math.random()*choices.length)];
